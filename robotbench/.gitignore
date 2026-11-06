@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+build/
+dist/
+experiments/
+*.run.json
+signals.csv
+comparison.json

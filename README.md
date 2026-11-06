@@ -4,6 +4,21 @@ Practical projects in robotics, control systems and software engineering by **Ar
 
 Start with a small command-line tool, explore simulations, then inspect the more substantial visual tools. These are initial learning releases with specific supported workflows; individual READMEs describe what has and has not been verified.
 
+## Flagship project: RobotBench
+
+[**RobotBench**](robotbench/) is a packaged desktop and command-line workbench for reproducible robot experiments. Load a restricted serial URDF arm, tune a controller, run seeded experiments, inspect failure diagnostics, replay results and compare runs with a baseline.
+
+From the repository root:
+
+```sh
+cd robotbench
+python -m pip install -e .
+python -m robotbench init experiments
+python -m robotbench gui experiments
+```
+
+The 0.1.0 source release includes a modular engine, versioned run artifacts, three example experiments, 25 focused checks and a CI workflow. Its built-in dynamics are a simplified joint-servo model with geometric collision checks; it is not a full physics simulator or hardware-control application. See the [project README](robotbench/README.md), [architecture](robotbench/docs/ARCHITECTURE.md) and [roadmap](robotbench/docs/ROADMAP.md).
+
 ## Project catalog
 
 | # | Project | What it does | Run / requirements |

@@ -1,5 +1,11 @@
 # Engineering Lab roadmap
 
+## Flagship: RobotBench
+
+The [RobotBench](robotbench/) 0.1.0 workflow is implemented: restricted serial URDF models, reproducible servo experiments, structured failures, portable results, replay and baseline comparison. It includes desktop and headless entry points.
+
+The [dedicated roadmap](robotbench/docs/ROADMAP.md) defines subsequent authoring, backend-integration and ROS milestones. Broader dynamics, motion planning and hardware support remain future work.
+
 ## Implemented initial releases
 
 | Project | Delivered | Next useful milestone |

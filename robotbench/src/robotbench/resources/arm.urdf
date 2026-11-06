@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot name="bench_arm_3r">
+  <link name="base"/>
+  <link name="turret"/>
+  <link name="upper_arm"/>
+  <link name="forearm"/>
+  <link name="tool"/>
+  <joint name="yaw" type="revolute">
+    <parent link="base"/><child link="turret"/>
+    <origin xyz="0 0 0.25" rpy="0 0 0"/><axis xyz="0 0 1"/>
+    <limit lower="-2.8" upper="2.8" effort="15" velocity="2.5"/>
+  </joint>
+  <joint name="shoulder" type="revolute">
+    <parent link="turret"/><child link="upper_arm"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/><axis xyz="0 1 0"/>
+    <limit lower="-1.6" upper="1.2" effort="12" velocity="2"/>
+  </joint>
+  <joint name="elbow" type="revolute">
+    <parent link="upper_arm"/><child link="forearm"/>
+    <origin xyz="0.5 0 0" rpy="0 0 0"/><axis xyz="0 1 0"/>
+    <limit lower="-1.8" upper="1.8" effort="10" velocity="2.5"/>
+  </joint>
+  <joint name="tool_mount" type="fixed">
+    <parent link="forearm"/><child link="tool"/>
+    <origin xyz="0.4 0 0" rpy="0 0 0"/>
+  </joint>
+</robot>
