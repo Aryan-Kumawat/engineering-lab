@@ -14,15 +14,14 @@
 | TaskTree Studio | JSON editor, execution trace, retries and cancellation | Graphical node authoring and asynchronous action semantics |
 | CalibLab | TCP fit, rigid registration, residual plots and held-out reports | Robust fitting, uncertainty and independent hardware measurements |
 
-## Planned
+## Newly implemented initial workflows
 
-### CloudLabel
+| Project | Delivered | Next useful milestone |
+|---|---|---|
+| CloudLabel | ASCII PLY/PCD viewing, editable axis-aligned boxes, undo/redo, autosave and cloud-matched JSON labels | Depth-aware selection, GPU rendering and semantic labels |
+| CellSketch | Editable process layouts, FIFO discrete-event simulation, travel times, baseline comparison and reports | Finite buffers, resource sharing and reach overlays |
 
-Begin with point-cloud import, orbit controls and editable 3D boxes. Add portable annotation export, undo/redo and autosave before sequence labeling. Completion requires exact annotation round trips and a measured viewer performance limit.
-
-### CellSketch
-
-Begin with a top-down equipment layout and deterministic discrete-event process simulation. Show throughput, queues and bottlenecks. Compare against hand-calculated examples before adding reach overlays or a 3D viewer.
+Both tools include example files, focused automated checks and selected Linux desktop smoke checks. Their READMEs record supported formats, simulation assumptions and verification limits.
 
 ## Release expectations
 

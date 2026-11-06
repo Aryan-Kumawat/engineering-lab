@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "jobs": 40,
+  "arrival_interval_s": 3.0,
+  "horizon_s": 180.0,
+  "travel_speed_m_s": 1.0,
+  "stations": [
+    {
+      "id": "load",
+      "name": "Loading table",
+      "kind": "workbench",
+      "x": 5.0,
+      "y": 8.0,
+      "cycle_s": 2.0,
+      "capacity": 1
+    },
+    {
+      "id": "robot",
+      "name": "Robot assembly",
+      "kind": "robot",
+      "x": 15.0,
+      "y": 8.0,
+      "cycle_s": 5.0,
+      "capacity": 1
+    },
+    {
+      "id": "exit",
+      "name": "Exit conveyor",
+      "kind": "conveyor",
+      "x": 25.0,
+      "y": 14.0,
+      "cycle_s": 2.0,
+      "capacity": 1
+    }
+  ]
+}

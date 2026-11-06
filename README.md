@@ -17,6 +17,8 @@ Start with a small command-line tool, explore simulations, then inspect the more
 | 07 | [ControlCanvas](07-controlcanvas/) | Connects control blocks visually, simulates responses and saves models | Desktop browser; Node.js for checks |
 | 08 | [TaskTree Studio](08-tasktree-studio/) | Edits task JSON, steps through behavior trees and inspects execution traces | Python 3.10+; Tkinter for GUI |
 | 09 | [CalibLab](09-caliblab/) | Fits tool offsets and rigid frame transforms with held-out validation | Python 3.10+ and NumPy; optional Tkinter GUI |
+| 10 | [CloudLabel](10-cloudlabel/) | Views ASCII PLY/PCD clouds and edits portable 3D box annotations | Python 3.10+, NumPy and Tkinter |
+| 11 | [CellSketch](11-cellsketch/) | Edits workcell layouts and simulates FIFO production flow | Python 3.10+; optional Tkinter GUI |
 
 ## Quick start
 
@@ -52,11 +54,11 @@ python caliblab.py demo demo-results
 python caliblab.py
 ```
 
-On systems using `python3`, substitute that command for `python`. Tkinter may need a separate OS package on Linux. Desktop interfaces need a graphical display; CLI examples work without one. No paid API is required. CalibLab is the first project here with a pip dependency: NumPy.
+On systems using `python3`, substitute that command for `python`. Tkinter may need a separate OS package on Linux. Desktop interfaces need a graphical display; CLI examples work without one. No paid API is required. CalibLab and CloudLabel require NumPy; install their requirements before running them.
 
 ## Checks
 
-Run the following from the repository root after installing CalibLab's requirements:
+Run the following from the repository root after installing NumPy from CalibLab or CloudLabel's requirements:
 
 ```sh
 python check_projects.py
@@ -65,6 +67,8 @@ python -m unittest discover -s 06-armlab -v
 node 07-controlcanvas/test.cjs
 python -m unittest discover -s 08-tasktree-studio -v
 python -m unittest discover -s 09-caliblab -v
+python -m unittest discover -s 10-cloudlabel -v
+python -m unittest discover -s 11-cellsketch -v
 ```
 
 Sensor Log can be compiled separately:
@@ -74,7 +78,7 @@ g++ -std=c++17 -Wall -Wextra -Wpedantic -O2 01-sensor-log/main.cpp -o sensor-log
 ./sensor-log 01-sensor-log/samples.csv
 ```
 
-Telemetry checks create a temporary localhost TCP listener. Tests cover selected numerical and execution behavior, not every user interaction. Desktop and browser interfaces still need visual verification. No hardware deployment has been validated.
+Telemetry checks create a temporary localhost TCP listener. Tests cover selected numerical and execution behavior, not every user interaction. CloudLabel and CellSketch received focused Linux desktop smoke checks; other interfaces still need visual verification. These checks do not cover every interaction. No hardware deployment has been validated.
 
 ## Current scope
 
@@ -84,15 +88,27 @@ Telemetry checks create a temporary localhost TCP listener. Tests cover selected
 - ControlCanvas supports a small, documented block library and solver contract.
 - TaskTree Studio uses JSON authoring and simulated synchronous actions.
 - CalibLab supports TCP and rigid registration; it does not perform hand-eye calibration or drive a robot.
+- CloudLabel supports ASCII clouds and axis-aligned boxes with a sampled CPU renderer.
+- CellSketch models a serial process route with unbounded FIFO queues and distance-based travel.
 
-## Next planned tools
+## Five visual-tool releases
 
-| Project | Intended first workflow | Status |
-|---|---|---|
-| CloudLabel | Local point-cloud viewing and 3D annotations | Planned; no implementation yet |
-| CellSketch | Workcell layouts and discrete-event process simulation | Planned; no implementation yet |
+The planned initial workflows for ControlCanvas, TaskTree Studio, CalibLab, CloudLabel and CellSketch are implemented. Each remains scoped to the capabilities described in its README. See [ROADMAP.md](ROADMAP.md) for the next milestones.
 
-See [ROADMAP.md](ROADMAP.md) for project milestones. Improve existing workflows and collect evidence before treating an initial implementation as production software.
+**Point-cloud labeling**, from the repository root:
+
+```sh
+cd 10-cloudlabel
+python -m pip install -r requirements.txt
+python cloudlabel.py
+```
+
+**Workcell planning**, from the repository root:
+
+```sh
+cd 11-cellsketch
+python cellsketch.py
+```
 
 ## Licensing
 

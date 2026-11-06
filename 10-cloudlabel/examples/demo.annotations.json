@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "coordinates": "source_xyz",
+  "box_type": "axis_aligned",
+  "cloud_sha256": "1be4b574da511fa14549de766e2ce2a04d03a60485aef19cbcc62191660ac18f",
+  "point_count": 407,
+  "boxes": [
+    {
+      "id": "object_1",
+      "label": "tall box",
+      "min": [
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "max": [
+        0.2,
+        0.3,
+        1.8
+      ]
+    },
+    {
+      "id": "object_2",
+      "label": "wide box",
+      "min": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "max": [
+        3.0,
+        2.3,
+        1.1
+      ]
+    }
+  ]
+}
