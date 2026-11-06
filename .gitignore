@@ -4,3 +4,8 @@ build/
 __pycache__/
 .env
 02-pid-playground/*.csv
+sensor-log
+*.sqlite
+*.sqlite-*
+03-tinyml-anomaly-detector/model.json
+04-robot-telemetry/telemetry.jsonl
