@@ -21,7 +21,7 @@ A growing portfolio of practical projects in programming, embedded systems, mach
 
 ## Status
 
-All five initial projects are implemented:
+Six projects are implemented:
 
 1. [Sensor Log](01-sensor-log/) — C++ CSV validation and streaming statistics.
 2. [PID Playground](02-pid-playground/) — desktop gain tuning and CSV simulation.
@@ -43,3 +43,5 @@ g++ -std=c++17 -Wall -Wextra -Wpedantic -O2 01-sensor-log/main.cpp -o sensor-log
 ```
 
 No paid APIs or pip dependencies are required. PID GUI mode needs Tkinter and a desktop display. Integration checks start a temporary localhost TCP server.
+
+6. [ArmLab](06-armlab/) — planar robot arm planning, animation and CSV export.
