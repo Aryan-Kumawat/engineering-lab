@@ -1,0 +1,5 @@
+01-sensor-log/sensor-log
+*.exe
+build/
+__pycache__/
+.env
