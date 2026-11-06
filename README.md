@@ -22,3 +22,5 @@ A growing portfolio of practical projects in programming, embedded systems, mach
 ## Status
 
 Project 01 — [Sensor Log](01-sensor-log/) is implemented. See its README for build instructions and limitations.
+
+Project 02 — [PID Playground](02-pid-playground/) adds interactive gain tuning and a reproducible CSV simulation.

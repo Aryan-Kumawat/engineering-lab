@@ -1,7 +1,7 @@
 # Project roadmap
 
 ## 01 — Sensor Log (Beginner)
-Build a small C++ command-line program that reads simulated sensor samples, validates them, computes basic summaries, and writes CSV. Learn clean interfaces, parsing, error handling, and documentation.
+Build a small C++ command-line program that reads simulated sensor samples, validates them, computes basic summaries, and reads CSV. Learn clean interfaces, parsing, error handling, and documentation.
 
 ## 02 — PID Playground (Beginner+)
 Simulate a simple motor or temperature plant and compare proportional, PI, and PID controllers. Plot setpoint tracking and discuss overshoot, settling time, and stability.
