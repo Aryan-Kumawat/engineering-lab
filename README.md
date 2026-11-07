@@ -19,6 +19,18 @@ python -m robotbench gui experiments
 
 The 0.1.0 source release includes a modular engine, versioned run artifacts, three example experiments, 25 focused checks and a CI workflow. Its built-in dynamics are a simplified joint-servo model with geometric collision checks; it is not a full physics simulator or hardware-control application. See the [project README](robotbench/README.md), [architecture](robotbench/docs/ARCHITECTURE.md) and [roadmap](robotbench/docs/ROADMAP.md).
 
+## Flagship design software: BatchStudio
+
+[**BatchStudio**](batchstudio/) generates personalized designs from editable templates and CSV data. Create badges, posters and coupons, check missing fields and overflowing text, then export PNG batches or actual-size A4/Letter PDFs with crop marks. Artwork and data stay in your browser.
+
+```sh
+cd batchstudio
+npm ci
+npm run dev
+```
+
+The MIT-licensed 0.1 release includes three templates, local image and QR layers, undo/redo, project backups, local autosave, example CSV/projects and 22 core tests. Browser checks covered PNG, four-record ZIP, A4 coupon PDF, CSV import, undo and project download. PDF output is raster RGB without bleed; see its [README](batchstudio/README.md) for limits.
+
 ## Project catalog
 
 | # | Project | What it does | Run / requirements |

@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "name": "Common Table / Coupon",
+  "template": {
+    "width": 90,
+    "height": 70,
+    "background": "#f7f3e9",
+    "elements": [
+      {
+        "rotation": 0,
+        "locked": false,
+        "id": "header-band",
+        "name": "header band",
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "width": 90,
+        "height": 11,
+        "fill": "#263f36",
+        "stroke": "#263f36",
+        "strokeWidth": 0
+      },
+      {
+        "rotation": 0,
+        "locked": false,
+        "id": "brand",
+        "name": "brand",
+        "type": "text",
+        "x": 5,
+        "y": 3,
+        "width": 80,
+        "height": 7,
+        "text": "COMMON TABLE / EVENT COUPON",
+        "fontSize": 8,
+        "minFontSize": 8,
+        "font": "Courier New",
+        "color": "#ffffff",
+        "bold": true,
+        "align": "left",
+        "shrink": true
+      },
+      {
+        "rotation": 0,
+        "locked": false,
+        "id": "offer",
+        "name": "offer",
+        "type": "text",
+        "x": 5,
+        "y": 18,
+        "width": 59,
+        "height": 18,
+        "text": "{{offer}}",
+        "fontSize": 23,
+        "minFontSize": 8,
+        "font": "Arial",
+        "color": "#263f36",
+        "bold": true,
+        "align": "left",
+        "shrink": true
+      },
+      {
+        "rotation": 0,
+        "locked": false,
+        "id": "event",
+        "name": "event",
+        "type": "text",
+        "x": 5,
+        "y": 39,
+        "width": 78,
+        "height": 9,
+        "text": "{{event}}",
+        "fontSize": 10,
+        "minFontSize": 8,
+        "font": "Arial",
+        "color": "#263f36",
+        "bold": true,
+        "align": "left",
+        "shrink": true
+      },
+      {
+        "rotation": 0,
+        "locked": false,
+        "id": "rule",
+        "name": "rule",
+        "type": "rect",
+        "x": 5,
+        "y": 50,
+        "width": 80,
+        "height": 0.5,
+        "fill": "#9cad9a",
+        "stroke": "#9cad9a",
+        "strokeWidth": 0
+      },
+      {
+        "rotation": 0,
+        "locked": false,
+        "id": "code",
+        "name": "code",
+        "type": "text",
+        "x": 5,
+        "y": 55,
+        "width": 55,
+        "height": 8,
+        "text": "{{code}}",
+        "fontSize": 11,
+        "minFontSize": 8,
+        "font": "Courier New",
+        "color": "#263f36",
+        "bold": true,
+        "align": "left",
+        "shrink": true
+      },
+      {
+        "rotation": 0,
+        "locked": false,
+        "id": "code-qr",
+        "name": "Check-in QR",
+        "type": "qr",
+        "x": 67,
+        "y": 52,
+        "width": 13,
+        "height": 13,
+        "value": "{{code}}",
+        "color": "#172224",
+        "background": "#ffffff"
+      }
+    ]
+  },
+  "data": {
+    "headers": [
+      "name",
+      "role",
+      "event",
+      "date",
+      "venue",
+      "code",
+      "offer"
+    ],
+    "rows": [
+      {
+        "name": "Aryan Kumawat",
+        "role": "DESIGN CREW",
+        "event": "Design After Dark",
+        "date": "21 NOV · 6 PM",
+        "venue": "THE STUDIO / JAIPUR",
+        "code": "DAD-001",
+        "offer": "ONE GOOD COFFEE"
+      },
+      {
+        "name": "Meera Shah",
+        "role": "SPEAKER",
+        "event": "Design After Dark",
+        "date": "21 NOV · 6 PM",
+        "venue": "THE STUDIO / JAIPUR",
+        "code": "DAD-002",
+        "offer": "ONE GOOD COFFEE"
+      },
+      {
+        "name": "Rohan Patel",
+        "role": "VOLUNTEER",
+        "event": "Design After Dark",
+        "date": "21 NOV · 6 PM",
+        "venue": "THE STUDIO / JAIPUR",
+        "code": "DAD-003",
+        "offer": "ONE GOOD COFFEE"
+      },
+      {
+        "name": "Aanya Rao",
+        "role": "EVENT LEAD",
+        "event": "Design After Dark",
+        "date": "21 NOV · 6 PM",
+        "venue": "THE STUDIO / JAIPUR",
+        "code": "DAD-004",
+        "offer": "ONE GOOD COFFEE"
+      }
+    ]
+  },
+  "assets": []
+}

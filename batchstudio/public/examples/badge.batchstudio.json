@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "name": "After Hours / Crew Badge",
+  "template": {
+    "width": 86,
+    "height": 54,
+    "background": "#172224",
+    "elements": [
+      {
+        "rotation": 0,
+        "locked": false,
+        "id": "accent-band",
+        "name": "accent band",
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "width": 86,
+        "height": 8,
+        "fill": "#d7eb67",
+        "stroke": "#d7eb67",
+        "strokeWidth": 0
+      },
+      {
+        "rotation": 0,
+        "locked": false,
+        "id": "badge-label",
+        "name": "badge label",
+        "type": "text",
+        "x": 5,
+        "y": 2,
+        "width": 76,
+        "height": 5,
+        "text": "AFTER HOURS / CREW ACCESS",
+        "fontSize": 7.5,
+        "minFontSize": 7.5,
+        "font": "Courier New",
+        "color": "#172224",
+        "bold": true,
+        "align": "left",
+        "shrink": true
+      },
+      {
+        "rotation": 0,
+        "locked": false,
+        "id": "name",
+        "name": "name",
+        "type": "text",
+        "x": 5,
+        "y": 15,
+        "width": 76,
+        "height": 11,
+        "text": "{{name}}",
+        "fontSize": 23,
+        "minFontSize": 8,
+        "font": "Arial",
+        "color": "#f7f3e9",
+        "bold": true,
+        "align": "left",
+        "shrink": true
+      },
+      {
+        "rotation": 0,
+        "locked": false,
+        "id": "role",
+        "name": "role",
+        "type": "text",
+        "x": 5,
+        "y": 30,
+        "width": 55,
+        "height": 7,
+        "text": "{{role}}",
+        "fontSize": 10,
+        "minFontSize": 8,
+        "font": "Courier New",
+        "color": "#d7eb67",
+        "bold": true,
+        "align": "left",
+        "shrink": true
+      },
+      {
+        "rotation": 0,
+        "locked": false,
+        "id": "event",
+        "name": "event",
+        "type": "text",
+        "x": 5,
+        "y": 43,
+        "width": 53,
+        "height": 6,
+        "text": "{{event}}",
+        "fontSize": 8,
+        "minFontSize": 8,
+        "font": "Arial",
+        "color": "#c3d1cb",
+        "bold": false,
+        "align": "left",
+        "shrink": true
+      },
+      {
+        "rotation": 0,
+        "locked": false,
+        "id": "code-qr",
+        "name": "Check-in QR",
+        "type": "qr",
+        "x": 65,
+        "y": 32,
+        "width": 16,
+        "height": 16,
+        "value": "{{code}}",
+        "color": "#172224",
+        "background": "#ffffff"
+      }
+    ]
+  },
+  "data": {
+    "headers": [
+      "name",
+      "role",
+      "event",
+      "date",
+      "venue",
+      "code",
+      "offer"
+    ],
+    "rows": [
+      {
+        "name": "Aryan Kumawat",
+        "role": "DESIGN CREW",
+        "event": "Design After Dark",
+        "date": "21 NOV · 6 PM",
+        "venue": "THE STUDIO / JAIPUR",
+        "code": "DAD-001",
+        "offer": "ONE GOOD COFFEE"
+      },
+      {
+        "name": "Meera Shah",
+        "role": "SPEAKER",
+        "event": "Design After Dark",
+        "date": "21 NOV · 6 PM",
+        "venue": "THE STUDIO / JAIPUR",
+        "code": "DAD-002",
+        "offer": "ONE GOOD COFFEE"
+      },
+      {
+        "name": "Rohan Patel",
+        "role": "VOLUNTEER",
+        "event": "Design After Dark",
+        "date": "21 NOV · 6 PM",
+        "venue": "THE STUDIO / JAIPUR",
+        "code": "DAD-003",
+        "offer": "ONE GOOD COFFEE"
+      },
+      {
+        "name": "Aanya Rao",
+        "role": "EVENT LEAD",
+        "event": "Design After Dark",
+        "date": "21 NOV · 6 PM",
+        "venue": "THE STUDIO / JAIPUR",
+        "code": "DAD-004",
+        "offer": "ONE GOOD COFFEE"
+      }
+    ]
+  },
+  "assets": []
+}
